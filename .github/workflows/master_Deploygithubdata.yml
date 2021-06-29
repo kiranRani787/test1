@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: '5.0.x'
         include-prerelease: true
 
     - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'Deploygithubdata'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0ef217eec139440a9f6e742d99a495b6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2c530c4ea2004e0b821ca6e4f1c9a940 }}
         package: .
